@@ -21,7 +21,7 @@ API to test graalvm native compile
 
 ## Prerequisites
 
-- On Windows, install Visual Studio 2022 + Desktop development with C++.
+- On Windows, install Visual Studio 2022 + Desktop development with C++ Workload.
 - Install a [graalvm-jdk-17.0.11](https://download.oracle.com/graalvm/17/latest/graalvm-jdk-17_windows-x64_bin.zip).
 - Set maven to use this jdk.
 
@@ -42,3 +42,15 @@ spring-boot-graalvm.exe
 ```
 
 Link API [localhost:8080](http://localhost:8080).
+
+## API Endpoints
+
+Tool [postman](https://www.postman.com):
+
+- GET localhost:8080
+```
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=UTF-8
+
+Hello GraalVM
+```
